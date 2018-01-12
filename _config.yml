@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: Homo Ex Machina
 header-img: img/home-bg.png
 email: rollin.metzger@gmail.com
 copyright_name: alcesalces11331
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Ruminations
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  alcesalces11331
