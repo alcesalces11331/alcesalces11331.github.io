@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Turtles All the Way Down"
-date:       2018-01-25 19:58:39 +0000
+date:       2018-01-25 14:58:40 -0500
 permalink:  turtles_all_the_way_down
 ---
 
@@ -21,3 +21,5 @@ Looking around, we're already seeing this perspective play out. With companies s
 Towards that end, software development, for me, is a pond to strengthen my understanding of programming principles and allow myself the opportunity to work towards a better future. I want to study machine learning and get us one step closer to bridging the gap between realty and science-fiction. I firmly believe this inertia is beyond our divided might to counteract. However, maybe we can guide the forces towards this future and finally put ourselves into the furthest stars. This is hope. This is, to quote, Buzz Lightyear:
 
 > To the universe and beyond.
+> 
+[](https://en.wikiquote.org/wiki/Turtles_all_the_way_down)
