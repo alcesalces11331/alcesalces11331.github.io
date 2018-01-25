@@ -22,4 +22,4 @@ Towards that end, software development, for me, is a pond to strengthen my under
 
 > To the universe and beyond.
 > 
-[](https://en.wikiquote.org/wiki/Turtles_all_the_way_down)
+[Turtles All The Way Down](https://en.wikiquote.org/wiki/Turtles_all_the_way_down)
