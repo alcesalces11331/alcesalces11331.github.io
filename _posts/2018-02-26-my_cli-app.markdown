@@ -1,0 +1,61 @@
+---
+layout: post
+title:      "My CLI-APP"
+date:       2018-02-26 23:13:40 +0000
+permalink:  my_cli-app
+---
+
+
+## What Could Go Wrong?
+
+Or, so I thought, going into my first solo guided project. No topic, no guidance, no list to check off what I had done and what I still had to do.  Just myself, my wiry set of knowledge, and my scrappy jigsaw-like approach to programming. To be honest, I had no idea what to do to begin. I had no idea where to begin. I knew I had to do something, and it helped that I had already decided on a topic: a HearthstoneTopDecks.com scraper 
+and CLI app. I knew what I wanted to show, and some vague knowledge of how to accomplish this, but it was like seeing the hidden city but not knowing how to get inside. 
+
+![](https://d2q63o9r0h0ohi.cloudfront.net/images/logos/logo-c66376ed06cce60a01849443a90be276dfcf2cebfda477fff2b90bd66397210229adf8c9ba9243fb30bf4299ec267633d17a14fb73e80177a0a8109b15cf74c3.png)
+
+
+I was anxious and ambitious, a somewhat disruptive combination when imbalanced. How could I get *my skills* to do *that*? I had not been coding very long, with brief explorations on sites like codecademy.com and just under four months on Flatiron. Up until now, the projects and labs had been very linear, even the projects at the end of OORuby. This was different and I was anxious. I was really being put to the test, really challenging myself. I think I met the challenge. I succeeded in creating my CLI-application and it runs superbly. That said, it was not easy.
+
+## Flombaum and Bundler
+
+My first breakthrough I cannot take credit for. The recommended video for this project laid the foundation for me to succeed. For that, I am thankful. If not for Avi's incredibly helpful video, I fear I would still be fumbling around in the dark. It was through that video, I saw that he used bundler install and then, BLAM, like magic, all the necessary files and folders erupted out of nascent code creating a framework, the architecture from which to approach and build from. I found it instructional -- and since I'm a visual learner, almost necessary -- to see someone actually program. I found something I could emulate and then synthesize into my own. It was by watching an actual program I was able to discover what was necessary for I do to do make the CLI-application function at an abstract level. 
+
+Watching the video taught me one very important programming lesson: make a decision and run with it. It was this explorative move which I was subconsciously drawn to about programming. It is a merger of creative direction and analytical guidance. So, as Avi suggested, I made a decision, then another decision. I built a class when I needed one and deleted files when I didn't. I followed his Avi's advice and stubbed out the code first. This skeleton is required in the early stages of a program or application. It functions as the map, the wayposts, I was looking for. Upon reflection, it's no different than bulleting out or brainstorming. They all guide the creative process to bring the idea to life. 
+
+## Nokogiri
+![](http://mike.daless.io/prez/nokogiri-gogaruco-2013-09-20/images/nokogiri-saws.jpg)
+
+The headaches. The hours. The headaches and the hours. With needle precision, peering through the veils of HTML/CSS to retrieve what you needed. In a recorded video, I spend 45 minutes sifting through Nokogiri nodes to retrieve the information I want. A 45 minute portion which pales to the sheer wall of time I spent parsing through nodes. Then iterating over the nodes. The iterating over the iterations. Then using Nokogiri again! It was nightmarishly fun, but I'm a masochist so I would enjoy something so torturous. 
+
+The end result is pretty and functional. That is all anyone needs to know. The rest I will keep secret, to myself.
+
+
+## What I Learned
+For one, Nokogiri is a learning experience, one which got easier the more I used it. I was able to store both html addresses and ul li list items, i.e.,
+
+```
+def self.scraper
+		doc = Nokogiri::HTML(open("http://www.hearthstonetopdecks.com"))
+	
+		doc.css('h3.text-center').children.each do |node|
+			@sections.unshift(node.text)
+		end
+
+		doc.css('.meta-box')[0].css('ul li').children.each do |node|
+			@featured_decks.unshift(node.text)
+			@featured_decks_html.unshift(node.attribute('href').value)
+		end
+
+		doc.css('.meta-box')[1].css('ul li').children.each do |node|
+			@new_community_decks.unshift(node.text)
+			@new_community_decks_html.unshift(node.attribute('href').value)
+		end
+```
+
+which is just a small section of using Nokogiri. Try as I might, I could not figure out how to abstract the code further and condense the file to maybe 50 lines of code total. This is where the hours went and the headaches came from. But, it was worthwhile, and, yes, I would put myself through it again. 
+
+Using Ruby to make this happen has been enlightening. I know this is not yet complete. So much refinement can happen. I know what I have created is functional, but not the prettiest. I liken this to my lack of experience with knowledge. Even after this CLI-app, what I know what to do is but a drop in the wide, vast, ocean that is Ruby. Heck, we haven't even reach Ruby on Rails yet. 
+
+This must be what parenting is like, in a crude, statuette sort of way. 
+
+Cheers.
