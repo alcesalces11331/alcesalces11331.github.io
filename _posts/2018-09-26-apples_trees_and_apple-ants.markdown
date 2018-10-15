@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Apples, Trees, and Apple-Ants"
-date:       2018-09-26 23:45:25 +0000
+date:       2018-09-26 19:45:26 -0400
 permalink:  apples_trees_and_apple-ants
 ---
 
 
 To begin, it is best to understand how I got here. In my previous post I discussed the 'process' and through using the 'process' I utilize the gigantic chalkboard right behind where I program. It's useful, and if you want to know more about the *how* of approaching applications read this [here](http://http://rollin-metzger.com/a_programmers_tale). Through the creation and problem-solving required to guide and application from start to finish, I lost sight of the joins table between two of my tables. Here is what I learned.
 
-### The Many-To-Many Relationship
+### The Many to Many
 
 As the name of the relationship implies, it's a relationship of two things in which transitively the first thing *has many of* the third thing through the second thing. In other words, let's look at an example of an apple tree. Let's say our apple tree needs three models (for simplicity's sake): 
 
@@ -20,7 +20,7 @@ Our models will look like this:
 
 ```
 class Tree < ActiveRecord::Base
-	has_many :apples
+  has_many :apples
 	has_many :insects, through: :apples
 end
 ```
@@ -28,13 +28,14 @@ end
 ```
 class Apple < ActiveRecord::Base
 	belongs_to :tree
-	has_many :insects
+	belongs_to :insect
 end
 ```
 
 ```
 class Insect < ActiveRecord::Base
-	belongs_to :apple
+	has_many :apples
+	has_many :trees, through: :apples
 end
 ```
 
