@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Following Returns"
-date:       2018-11-13 00:33:34 +0000
+title:      "Returns and Purity"
+date:       2018-11-12 19:33:35 -0500
 permalink:  following_returns
 ---
 
@@ -17,3 +17,19 @@ When programming backwards, we already begin in the final level of scope we need
 In practice, I'll be honest, I use it as a beacon to pave the path to the result. I know where I'm going and what I need to end up with. Then, it's a bit of a sandwich: starting simultaneously at both ends and working towards the middle. This helps by ensuring more of your functions are *pure* functions.
 
 ## Why rely on a program to do what you can do for yourself?
+
+In the second half of this blog post, I want to discuss the definition of a *pure* function from a broader point of view. By definition a pure function is: 
+> If a pure function is repeatedly invoked with the same set of arguments, the function will always return the same result. Its behavior is predictable. Additionally, invoking the function has no external side-effects such as making a network or database call or altering any object(s) passed to it as an argument.
+
+This definition should be refined to say:
+> If a pure function is repeatedly invoked with the same set of arguments, the funciton will always **act the same way although returning different results**. Additionally, invoking the function has no external side-effects such as making a network or database call or altering any object(s) passed to it as an argument.
+
+This begs a slight alteration to an impure function:
+> the return value is not predictable, and invoking the function might make network or database calls or alter any objects passed in as arguments.
+
+to:
+> invoking the function might make network or database calls or alter any objects passed in as arguments.
+
+thus maintaining system consistency while allowing random processes, i.e., *desired effects* to occur. The separation along the lines of "making database calls or altering any objects passed in as arguments" presents a cleaner interpretation to the ever evolving nature of programming while allowing the use of *pure* and *impure* nomenclature. 
+
+###### However, I may be overly particular about this. BUT I CARE.
