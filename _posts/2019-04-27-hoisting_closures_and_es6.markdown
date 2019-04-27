@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Hoisting, Closures, and ES6"
-date:       2019-04-27 21:27:02 +0000
+title:      "Hoisting, Scope, and ES6"
+date:       2019-04-27 17:27:03 -0400
 permalink:  hoisting_closures_and_es6
 ---
 
