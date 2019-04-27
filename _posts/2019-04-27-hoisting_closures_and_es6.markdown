@@ -49,11 +49,11 @@ getUser: fn()
 ```
 All this means is it knows *name* and *handle* are variables but doesn't know what it points to. Similarly, it knows getUser() is a function but doesn't know exactly what it does. It has only allocated memory for them. Now, after the *Creation* phase, Javascript has an *Execution* phase. What does this do? It then assigns the values specified. This is when the variables *name*, *handle*, *getUser* have their associated values, i.e., when `name = 'Rollin'`. To review the **Global Execution Context** has two phases **Creation** and **Execution**. Before we continue into the other *context*, let's define one of the reasons for writing this blog post: hoisting.
 
-###### Hoisting: [The process of assigning variable declarations a default value of *undefined* during the creation phase](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+#### Hoisting: [The process of assigning variable declarations a default value of *undefined* during the creation phase](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
 The idea is simple, but has implications when the code read by Javascript becomes more complex. For instance, it is time to introduce the next context Javascript executes in. The **Function Execution Context** is created when Javascript begins *executing* over the code its **hoisted** to begin the process of assignment. When Javascript gets to a function its created, it adds the function to the **Function Execution Stack**.  Now, let's define *scope*.
 
-###### Scope: [The current context of execution. The context in which values and expressions are "visible," or can be referenced.](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+#### Scope: [The current context of execution. The context in which values and expressions are "visible," or can be referenced.](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 
 What exactly does MDN mean by this defintion? It's certainly vague. To break it down, the first definition is *The current context of execution*. If we think about the environment of where the variables are first declared, we have what MDN means by the current context of execution. Remember what we defined above? This means the current context of execution is *either* the **Global Execution Context** *or* a **Function Execution Context**. Here is a link to a CodePen.io [example](https://codepen.io/alcesalces11331/pen/xeMoZR?editors=0101) ( or a link exists at the bottom of the post ) on how hoisting and scope is affected by execution context. The important elements to take away are what contexts do variables have access to?
 ### Bread and Butter: Putting it all Together
@@ -112,7 +112,7 @@ Thanks for taking the time to read this post. I hope this helps everyone underst
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-###### Special Thanks
+#### Special Thanks
 * [This blog post from Tyler McGinnis](https://tylermcginnis.com/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/) for filling in the gaps of my knowledge and educating me further on these necessary concepts. 
 * [MDN Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 * [MDN Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
