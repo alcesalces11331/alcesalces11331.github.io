@@ -7,8 +7,6 @@ permalink:  react_front-end_rails-api_backend
 
 # From Start To Finish
 
-blah blah fucking blah here's the blog post to end all blog posts
-
 The culmination of all I've learned has lead to this. My nascency to this. From learning the fundamentals of web development, I've progressed steadily and true to a burgeoning web developer. This project is the apex of all which came before. Platitudes aside, here's the real truth. I reached this point through a sheer amount of dedication and hard work. This project is nothing short of what someone can achieve with a passion to continue bettering themself and their work.
 
 React is one of the most fun architectures to play with. It's responsive and intuitive. With Redux, managing persisted data becomes as simple calling your parents. With its lifecycle, managing what the user sees becomes a proverbial 'flick of the wrist'. Coding with react makes one feel like Merlin. This is not say this final project was easy, only that it was engrossing and challenging. Projects are **always** an experience to learn from and this one was no different. If anything, because of the complex layers required of it, this project was the ultimate experience to learn from. It requires knowledge of HTML/CSS, the bread and butter of the web. Any user will need to persist data. Learning from Sinatra, the capability of CRUD was like unlocking a horde of cache -- and putting it back together again. Our API, handled by Rails, was smooth, asking of correct RESTful routing and method calling. No errors here. The real Merlinesque manipulation was integrating the Javascript language -- accelerated along with ES6 -- into React's `fetch()` function and JSX. 
