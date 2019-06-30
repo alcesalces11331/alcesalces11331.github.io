@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "React Front-End, Rails-API Backend"
-date:       2019-06-30 22:46:08 +0000
+title:      "There and Back Again: A Coder's Tale"
+date:       2019-06-30 18:46:09 -0400
 permalink:  react_front-end_rails-api_backend
 ---
 
