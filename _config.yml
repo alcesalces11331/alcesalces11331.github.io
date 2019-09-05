@@ -1,15 +1,14 @@
 # Site settings
-title: Homo Ex Machina
+author: Rollin Metzger
+title: Digital Expedition
 header-img: img/home-bg.png
 email: rollin.metzger@gmail.com
-copyright_name: alcesalces11331
+copyright_name: Rollin Metzger
 description: > # this means to ignore newlines until "baseurl:"
-  Ruminations
+  Wanderings
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  alcesalces11331
-learn_profile: alcesalces11331
-email_username: rollin.metzger@gmail.com
 
 # Build settings
 markdown: kramdown
